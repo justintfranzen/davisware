@@ -1,0 +1,505 @@
+.awards {
+  .et_pb_row:nth-child(2) {
+    display: flex;
+    align-items: center;
+
+    .et_pb_image {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.double-shape-bg {
+  background-position: bottom right !important;
+  background-size: auto;
+}
+
+.contractors-manufacturers {
+  .et_pb_main_blurb_image {
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .dsm-toggle-btn {
+    display: none;
+  }
+
+  .dsm_content_toggle {
+    .et_pb_section {
+      .et_pb_row {
+        width: 100%;
+      }
+    }
+
+    .et_pb_main_blurb_image {
+      width: 50%;
+
+      img {
+        width: 6em;
+        max-width: 100%;
+      }
+    }
+
+    .dsm-toggle {
+      justify-content: space-evenly;
+
+      label {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .first-line {
+        color: $color-secondary;
+        font-size: 1em;
+        font-weight: 600;
+        line-height: 1.5em;
+      }
+
+      .second-line {
+        color: $color-gray-1;
+        font-size: 2em;
+        line-height: 1em;
+        font-weight: 600;
+      }
+
+      .dsm-toggle-left,
+      .dsm-toggle-right {
+        display: flex;
+        align-items: end;
+        pointer-events: none;
+
+        &::before {
+          background-image: url('../assets/svg/contractors-manufacturers.svg');
+          content: '.';
+          background-size: contain;
+          float: left;
+          background-repeat: no-repeat;
+          height: 4.5em;
+          width: 4.5em;
+          position: relative;
+          right: 1em;
+          bottom: 0;
+        }
+      }
+
+      .dsm-toggle-right {
+        display: none;
+      }
+    }
+  }
+
+  .et_pb_blurb_content {
+    display: flex;
+  }
+
+  .et_pb_blurb_container {
+    text-align: left;
+    padding-left: 1.5em;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    width: 50%;
+    transition: 0.3s all ease-in-out;
+
+    &:hover {
+      margin-top: -1em;
+      color: $color-primary;
+
+      .et_pb_module_header {
+        color: $color-primary !important;
+      }
+    }
+  }
+
+  .et_pb_module_header {
+    font-weight: 600;
+    font-size: 0.9em !important;
+    color: $color-gray-1;
+    line-height: 1.5em;
+    padding-bottom: 0;
+    transition: 0.3s all ease-in-out;
+  }
+
+  .et_pb_blurb_description {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: $body-small;
+
+    &::after {
+      font-family: $font-awesome;
+      content: ''; // This is an arrow. Don't ask me why.
+      opacity: 1;
+      margin-left: 0;
+      font-weight: 900;
+      font-size: $body-small;
+      position: relative;
+      left: 0.5em;
+    }
+  }
+}
+
+.lighten {
+  opacity: 0.35;
+}
+
+.see-more-features {
+  display: none;
+}
+
+// stylelint-disable no-descending-specificity
+.commercial-food {
+  .commercial-food-toggle {
+    .dsm-toggle {
+      .dsm-toggle-right,
+      .dsm-toggle-left {
+        pointer-events: inherit;
+      }
+
+      .dsm-toggle-right {
+        display: flex;
+      }
+    }
+  }
+}
+
+.solutions-features {
+  .et_pb_main_blurb_image {
+    border-right: 3px solid $color-primary;
+  }
+
+  .et_pb_blurb_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s all;
+
+    &:hover {
+      margin-top: -1em;
+      color: $color-primary;
+
+      .et_pb_module_header,
+      .et_pb_blurb_description {
+        color: $color-primary !important;
+      }
+    }
+  }
+
+  .et_pb_blurb_description {
+    margin-right: 2em;
+    font-weight: 600;
+    font-size: $body-small;
+    color: $color-gray-1;
+
+    &::after {
+      font-family: $font-awesome;
+      content: ''; // This is an arrow. Don't ask me why.
+      opacity: 1;
+      margin-left: 0;
+      font-weight: 900;
+      font-size: $body-small;
+      position: relative;
+      left: 0.5em;
+    }
+  }
+}
+
+// stylelint-enable no-descending-specificity
+
+@media (min-width: $tablet-large) {
+  .contractors-manufacturers {
+    .et_pb_blurb_content {
+      .et_pb_main_blurb_image {
+        border-right: 3px solid $color-primary;
+      }
+
+      .et_pb_image_wrap {
+        display: flex;
+        justify-content: end;
+
+        img {
+          padding-right: 1em;
+        }
+      }
+    }
+  }
+
+  body {
+    #main-content {
+      .et_pb_section {
+        &.cta-guide {
+          padding-top: 0;
+
+          .et_pb_row {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .double-shape-bg {
+    .video-cta-section_header {
+      padding-top: 0 !important;
+    }
+
+    .et_pb_image {
+      text-align: center;
+    }
+  }
+
+  .et_pb_section {
+    &.contractors-manufacturers {
+      padding-bottom: 0 !important;
+
+      .et_pb_row {
+        padding-bottom: 0 !important;
+        margin: 0 auto;
+
+        .et_pb_blurb_container {
+          border-left: none;
+          border-top: 3px solid $color-primary;
+          padding: 1em 0 0;
+          margin-top: 1em;
+        }
+
+        .et_pb_column {
+          .dsm-toggle-left {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            &::before {
+              right: 0;
+              bottom: 0.5em;
+            }
+          }
+
+          .dsm-toggle-right {
+            &::before {
+              bottom: 0.5em !important;
+              right: 0;
+            }
+          }
+
+          .et_pb_blurb_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .et_pb_blurb {
+            width: 85%;
+            margin: 0 auto;
+
+            h4 {
+              &.et_pb_module_header {
+                font-size: 0.9em !important;
+                height: 4em;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .solutions-features {
+      .et_pb_main_blurb_image {
+        border-right: none;
+      }
+    }
+  }
+
+  .dsm-content-toggle-front {
+    .et_pb_section {
+      display: flex;
+
+      .et_pb_row:nth-child(3),
+      .et_pb_row:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .dsm-content-toggle-back {
+    .et_pb_section {
+      display: flex;
+
+      .et_pb_row:nth-child(3),
+      .et_pb_row:last-child {
+        display: none;
+      }
+    }
+  }
+
+  .see-more-features {
+    display: block;
+
+    .et_pb_text_inner {
+      a {
+        font-weight: 600;
+        font-size: 1em;
+        text-transform: uppercase;
+
+        &::after {
+          content: '';
+          background-image: url('../assets/svg/right-arrow.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          height: 1.5em;
+          width: 2em;
+          display: inline-block;
+          position: relative;
+          top: 0.4em;
+          left: 1em;
+          transition: 0.3s all ease-in-out;
+        }
+      }
+    }
+  }
+
+  .dvswr-bottom-cta-button-holder {
+    .et_pb_button_module_wrapper {
+      display: flex;
+      justify-content: center;
+
+      .et_pb_button {
+        width: 18em;
+        text-align: center;
+      }
+    }
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    .cta-guide {
+      .et_pb_text_inner {
+        font-size: 0.75em;
+        line-height: 1.3;
+      }
+    }
+  }
+
+  // stylelint-disable no-descending-specificity
+  .commercial-food {
+    .commercial-food-toggle {
+      .dsm-toggle {
+        .dsm-toggle-right {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        }
+      }
+    }
+  }
+  // stylelint-enable no-descending-specificity
+
+  .contractors-manufacturers {
+    .dsm-content-toggle-front,
+    .dsm-content-toggle-back {
+      .et_pb_section {
+        .et_pb_row:nth-child(3),
+        .et_pb_row:nth-child(4),
+        .et_pb_row:nth-child(5),
+        .et_pb_row:nth-child(6),
+        .et_pb_row:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-medium) {
+  body {
+    .cta-guide {
+      .text-image {
+        .et_pb_text_inner {
+          font-size: 0.75em;
+          line-height: 1;
+        }
+
+        .et_pb_button {
+          font-size: 0.7em !important;
+        }
+
+        .et_pb_image {
+          width: 175%;
+        }
+      }
+    }
+  }
+
+  .contractors-manufacturers {
+    .dsm_content_toggle {
+      .et_pb_section {
+        padding-top: 0;
+      }
+
+      .dsm-toggle {
+        .first-line {
+          font-size: 0.75em;
+        }
+
+        .second-line {
+          font-size: 1.25em;
+        }
+      }
+    }
+
+    .et_pb_blurb_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .et_pb_blurb_container {
+      border-left: none;
+      border-top: 3px solid $color-primary;
+      padding: 1em 0 0;
+      margin-top: 0.5em;
+      width: 100%;
+
+      .et_pb_module_header {
+        font-size: 0.875em !important;
+      }
+    }
+  }
+
+  .awards {
+    .et_pb_row:nth-child(2) {
+      display: block;
+      padding-top: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-small) {
+  body {
+    #page-container {
+      .cta-guide {
+        .text-image {
+          .et_pb_text_inner {
+            font-size: 0.75em;
+            line-height: 1;
+          }
+
+          .et_pb_button {
+            font-size: 0.7em !important;
+            padding: 0.3em 0.7em !important;
+          }
+
+          .et_pb_image {
+            width: 175%;
+          }
+        }
+      }
+    }
+  }
+}

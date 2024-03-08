@@ -1,0 +1,289 @@
+.hbspt-form {
+  label {
+    color: $color-gray-1;
+    font-weight: 600;
+    font-size: 0.875em;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  .hs-fieldtype-text,
+  .hs-fieldtype-phonenumber,
+  .hs-fieldtype-select,
+  .hs-fieldtype-textarea {
+    input,
+    select,
+    textarea {
+      border: 1px solid $color-gray-3;
+      height: 3.1em;
+      width: 100%;
+      margin: 0.5em 0;
+      padding-left: 0.5em;
+    }
+
+    textarea {
+      height: 15em;
+    }
+  }
+
+  .hs-submit {
+    display: flex;
+    justify-content: flex-end;
+
+    .hs-button {
+      background: $color-primary;
+      border: 1px solid $color-secondary !important;
+      border: none;
+      color: $color-white;
+      padding: 0.8em 3em;
+      text-transform: uppercase;
+      font-size: 0.857em;
+      font-weight: 600;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        background: $color-white;
+        border: 1px solid $color-white;
+        color: $color-primary;
+      }
+    }
+  }
+
+  .inputs-list {
+    &.multi-container {
+      padding: 0 !important;
+
+      .hs-form-checkbox {
+        display: flex !important;
+
+        .hs-form-checkbox-display {
+          input {
+            height: 1em !important;
+            width: 1em !important;
+            margin-right: 0.5em !important;
+            top: 0.15em !important;
+            position: relative !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+#hsForm_d4961c25-14df-44ea-96a9-559015101c30 {
+  .hs_company.hs-company.hs-fieldtype-text {
+    &.field.hs-form-field {
+      width: 50%;
+      padding-right: 1em;
+    }
+  }
+
+  .hs_state_v2.hs-state_v2.hs-fieldtype-select {
+    &.field.hs-form-field {
+      width: 50%;
+      padding-left: 1em;
+    }
+  }
+}
+
+.contact-forms {
+  .dsm-advanced-tabs-content-wrapper {
+    width: 100%;
+
+    .dsm-inner-content-wrapper.animated.fadeIn {
+      width: 100%;
+    }
+  }
+}
+
+.footer {
+  .subscribe-form {
+    .hbspt-form {
+      .hs_error_rollup {
+        display: none;
+      }
+
+      .inputs-list {
+        li {
+          margin: 0;
+          position: absolute;
+        }
+      }
+
+      .submitted-message {
+        p {
+          color: $color-white;
+        }
+      }
+
+      label {
+        color: $color-white;
+      }
+
+      .hs-form-private {
+        display: flex;
+        align-items: center;
+
+        .hs-email {
+          width: 100%;
+
+          input {
+            height: 3.4em;
+          }
+        }
+
+        .hs-button {
+          margin-top: 1.8em;
+        }
+      }
+    }
+  }
+}
+
+.dsm-advanced-tabs-content-wrapper {
+  .hs-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+    .hs-form-field {
+      width: 100%;
+
+      &.hs_firstname {
+        width: 50%;
+        padding-right: 1em;
+      }
+
+      &.hs_lastname {
+        width: 50%;
+        padding-left: 1em;
+      }
+
+      &.hs_email {
+        width: 50%;
+        padding-right: 1em;
+      }
+
+      &.hs_phone {
+        width: 50%;
+        padding-left: 1em;
+      }
+    }
+  }
+}
+
+.request-demo-col {
+  background: $color-white;
+  padding: 1.5em;
+  border-radius: 25px;
+
+  .request-demo-form {
+    label {
+      color: $color-black;
+    }
+
+    .hbspt-form {
+      .hs-submit {
+        .hs-button {
+          background: $color-orange;
+          border: none !important;
+
+          &:hover {
+            background: $color-primary;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .inputs-list {
+    &.multi-container {
+      padding: 0 !important;
+      display: grid !important;
+      grid-template-columns: 50% 50% !important;
+    }
+  }
+}
+
+@media (max-width: $mobile-medium) {
+  .dsm-advanced-tabs-content-wrapper .hs-form {
+    display: block;
+
+    .hs-form-field {
+      width: 100%;
+
+      &.hs_firstname {
+        width: 100%;
+        padding-right: 0;
+      }
+
+      &.hs_lastname {
+        width: 100%;
+        padding-left: 0;
+      }
+
+      &.hs_email {
+        width: 100%;
+        padding-right: 0;
+      }
+
+      &.hs_phone {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+
+    .hs_company.hs-company.hs-fieldtype-text {
+      &.field.hs-form-field {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    .hs_state_v2.hs-state_v2.hs-fieldtype-select {
+      &.field.hs-form-field {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+
+  #hsForm_d4961c25-14df-44ea-96a9-559015101c30 {
+    .hs_company.hs-company.hs-fieldtype-text {
+      &.field.hs-form-field {
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+
+    .hs_state_v2.hs-state_v2.hs-fieldtype-select {
+      &.field.hs-form-field {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+/****  Safari Styles  *****/
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .subscribe-form {
+      .hbspt-form {
+        .hs-form-private {
+          .hs-button {
+            margin: 1.9em 0 0 !important;
+            width: 10em;
+            padding: 0.53em 3em;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

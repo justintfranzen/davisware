@@ -1,0 +1,28 @@
+{
+  "name": "davisware",
+  "version": "1.0.0",
+  "description": "Davisware Website",
+  "main": "index.php",
+  "scripts": {
+    "build": "npm run build --prefix ./wp-content/themes/davisware-divi-child",
+    "dev": "npm run dev --prefix ./wp-content/themes/davisware-divi-child",
+    "postinstall": "npm install ./wp-content/themes/davisware-divi-child",
+    "lint": "npm run lint --prefix ./wp-content/themes/davisware-divi-child",
+    "lint:fix": "npm run lint:fix --prefix ./wp-content/themes/davisware-divi-child"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TODO"
+  },
+  "author": "THIEL",
+  "license": "UNLICENSED",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
+  },
+  "dependencies": {
+    "davisware-divi-child": "file:wp-content/themes/davisware-divi-child"
+  }
+}

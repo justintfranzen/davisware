@@ -1,0 +1,365 @@
+#main-footer {
+  display: none;
+}
+
+.contact-information {
+  .et_pb_text_inner {
+    display: flex;
+    align-items: end;
+    font-size: 0.7em;
+    line-height: 1.5;
+  }
+
+  img {
+    max-width: 4em;
+    margin-right: 1em;
+  }
+}
+
+.contact-information.phone {
+  .et_pb_text_inner {
+    align-items: center;
+  }
+}
+
+.bottom-bar {
+  .et_pb_column:last-child {
+    .et_pb_text_inner {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+  }
+
+  img {
+    width: 50px;
+    margin-left: 15px;
+  }
+}
+
+.subscribe_wrapper {
+  .subscribe {
+    display: inline-flex;
+    width: 100%;
+
+    .gform-body {
+      width: 100%;
+    }
+
+    .gform_button {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.subscribe-form {
+  .gform_wrapper.gravity-theme {
+    .gform_footer {
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    .gfield {
+      display: flex;
+
+      .ginput_container_email {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .ginput_container.ginput_container_consent {
+    font-size: 11px;
+    color: $color-white;
+    line-height: 1.5;
+    display: flex;
+    align-items: start;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  .et_pb_row {
+    max-width: $max-row-width;
+    width: calc(100% - 4em);
+    display: flex;
+
+    .col-contact-info {
+      margin-right: 0;
+      font-size: 0.9em;
+    }
+
+    .row-six-col {
+      display: flex;
+      flex-direction: column;
+
+      .et_pb_column {
+        flex-grow: 1;
+        flex-basis: fit-contente;
+      }
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: max-content;
+
+    .category {
+      margin-bottom: 10px;
+    }
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    list-style-type: none;
+    line-height: 1.1;
+    margin: 0.5em 0;
+  }
+
+  a {
+    color: $color-white;
+    font-size: 0.9em;
+  }
+}
+
+.social-icons {
+  margin: 2em 0 2.5em !important;
+
+  svg.svg-inline--fa {
+    height: 15px;
+    width: 15px;
+
+    svg.svg-inline--fa:first-child {
+      margin-left: 5px;
+    }
+  }
+
+  .et_pb_code_inner {
+    color: $color-white;
+    font-size: 1em;
+    line-height: 24px;
+    font-weight: 500;
+
+    div {
+      display: flex;
+      width: 8em;
+      justify-content: space-between;
+      margin-top: 0.5em;
+    }
+
+    a {
+      background: #057dc1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .bottom-bar {
+    .et_pb_column:last-child {
+      .et_pb_text_inner {
+        justify-content: end;
+        align-items: center;
+      }
+    }
+  }
+
+  .contact-information {
+    &.address {
+      img {
+        top: 0.3em;
+      }
+    }
+  }
+
+  .subscribe-form {
+    .ginput_container_email {
+      width: 85%;
+    }
+
+    .gform_wrapper {
+      &.gravity-theme {
+        .gform_fields {
+          grid-column-gap: 11%;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .row-hubspot-subscribe {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row-six-col {
+      .contact-information {
+        .et_pb_text_inner {
+          font-size: 0.95em;
+        }
+      }
+
+      .et_pb_column {
+        &:first-child {
+          width: 100%;
+        }
+      }
+    }
+
+    .col-contact-info {
+      margin-right: 0;
+    }
+
+    .et_pb_row {
+      .footer-links {
+        flex-grow: 0;
+        flex-basis: auto;
+        width: 100% !important;
+        margin: 0.5em 0;
+
+        .category {
+          .et_pb_text_inner {
+            &::after {
+              border-style: solid;
+              border-width: 0.15em 0.15em 0 0;
+              content: '';
+              display: inline-block;
+              height: 0.45em;
+              left: 1em !important;
+              position: relative;
+              vertical-align: top;
+              width: 0.45em;
+              top: 0.3em;
+              transform: rotate(135deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .category-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s !important;
+  }
+
+  .show-category {
+    max-height: 14em !important;
+    transition: 0.5s !important;
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .gform_wrapper {
+    .ginput_container_consent {
+      input {
+        width: 7em;
+        height: 2em;
+        top: -0.5em;
+        position: relative;
+      }
+    }
+
+    .gform_button {
+      &.button {
+        padding: 0.63em 1.5em !important;
+      }
+    }
+  }
+}
+
+/***  Safari Styles  ***/
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .gform_wrapper {
+      .gform_button.button {
+        position: relative;
+        bottom: 0.15em;
+      }
+    }
+  }
+
+  .footer {
+    .bottom-bar {
+      .et_pb_column {
+        &:last-child {
+          .et_pb_text_inner {
+            justify-content: flex-end;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $tablet-large) {
+    .footer {
+      .bottom-bar {
+        .et_pb_column {
+          &:last-child {
+            .et_pb_text_inner {
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-medium) {
+  .footer-logo-slider {
+    padding: 0 !important;
+
+    .match-header-container {
+      .swiper-container {
+        .swiper-wrapper {
+          padding: 5em;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .bottom-bar {
+      display: flex;
+      flex-direction: column;
+
+      .et_pb_column:last-child .et_pb_text_inner {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/****  Firefox Styles  ****/
+
+@-moz-document url-prefix("") {
+  .gform_wrapper {
+    &.gravity-theme {
+      .gfield {
+        grid-column: 1 / -2;
+      }
+    }
+
+    .gform_button {
+      &.button {
+        position: relative;
+      }
+    }
+  }
+}

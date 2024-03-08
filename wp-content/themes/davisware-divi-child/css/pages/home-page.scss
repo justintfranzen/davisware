@@ -1,0 +1,219 @@
+.dvsw-video-header {
+  @media (max-width: $tablet-x-medium) {
+    .et_pb_text_inner {
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .et_pb_section_video_bg {
+    filter: drop-shadow(0 12px 15px rgba(50 50 0 / 50%));
+
+    .mejs-container {
+      height: calc(100% - 3em) !important;
+      clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% calc(100% - 4em),
+        70% 100%,
+        0% calc(100% - 7em)
+      );
+
+      @media (max-width: $tablet-x-medium) {
+        clip-path: polygon(
+          0% 0%,
+          100% 0%,
+          100% calc(74% - 4em),
+          56% 100%,
+          0% calc(100% - 7em)
+        );
+      }
+    }
+  }
+}
+
+.wobly-bg {
+  background-image: url('../assets/svg/test-blob.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  min-height: 756px;
+
+  @media (max-width: $tablet-large) {
+    background-size: 200% 100%;
+    background-position: bottom center;
+  }
+}
+
+.dvswr-bottom-cta {
+  background-color: $color-primary;
+  color: $color-white;
+  clip-path: polygon(0% 3em, 30% 7em, 100% 0%, 100% 100%, 0% 100%);
+  padding-top: 13.375em;
+  padding-bottom: 7em;
+  z-index: 1;
+
+  @media (max-width: $tablet-large) {
+    background-position: right;
+    clip-path: polygon(0% 6em, 100% 0%, 100% 100%, 0% 100%);
+  }
+
+  .dvswr-bottom-cta-button-holder {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $tablet-large) {
+      flex-direction: column;
+    }
+
+    .et_pb_column {
+      margin: 0 0.5em;
+      width: auto;
+
+      @media (max-width: $tablet-large) {
+        margin: 0 0 1.5em;
+      }
+
+      .et_pb_button {
+        &:not(.reversed) {
+          border-color: $color-white;
+
+          &:hover {
+            border-color: $color-white;
+          }
+        }
+      }
+    }
+  }
+
+  &.et_pb_section {
+    padding-top: 13.375em;
+    padding-bottom: 9em;
+  }
+
+  &-main-header {
+    h2 {
+      color: $color-white;
+      text-transform: uppercase;
+      text-align: center;
+
+      @media (max-width: $tablet-large) {
+        font-size: 1.625em;
+      }
+    }
+  }
+
+  &-main-text {
+    line-height: 2;
+
+    &.et_pb_module {
+      text-align: center;
+    }
+  }
+
+  // stylelint-disable no-descending-specificity
+
+  &-button-holder {
+    max-width: 1080px;
+
+    .et_pb_column {
+      text-align: center;
+
+      @media (max-width: $tablet-large) {
+        a {
+          min-width: 300px;
+          padding: 0.75em 2.5em;
+        }
+      }
+
+      &:first-of-type:nth-last-of-type(3) {
+        text-align: right;
+
+        @media (max-width: $tablet-large) {
+          text-align: center;
+        }
+      }
+
+      &:last-of-type:nth-of-type(3) {
+        text-align: left;
+
+        @media (max-width: $tablet-large) {
+          text-align: center;
+        }
+      }
+    }
+  }
+  // stylelint-enable no-descending-specificity
+}
+
+.dvsw-text-switcher {
+  position: relative;
+  height: 1em;
+  display: inline-block;
+  vertical-align: bottom;
+  color: $color-tertiary;
+  @include transition(0.4s all ease-in-out);
+
+  span {
+    position: absolute;
+    left: 0;
+    bottom: -1.25em;
+    opacity: 0;
+    @include transition(0.4s all ease-in-out);
+
+    white-space: nowrap;
+    font-weight: 600;
+
+    &.active {
+      position: absolute;
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+
+  &:not(.initialized) {
+    span:first-of-type {
+      position: relative;
+      opacity: 1;
+      bottom: 0;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (max-width: $screen-medium-large) {
+  .video-cta-section {
+    .et_pb_row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column-reverse;
+
+      .et_pb_column {
+        width: 100%;
+
+        .et_pb_image {
+          display: flex;
+          justify-content: center;
+
+          img {
+            width: 70%;
+            margin: 0 auto;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .wobly-bg {
+    background-size: 100% 115%;
+  }
+}
+
+@media (max-width: $mobile-x-small) {
+  .wobly-bg {
+    background-size: 200% 110%;
+  }
+}

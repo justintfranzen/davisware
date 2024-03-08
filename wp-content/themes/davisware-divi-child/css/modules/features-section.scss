@@ -1,0 +1,134 @@
+.features {
+  .et_pb_button {
+    border: 1px solid $color-secondary !important;
+    border-radius: 0 !important;
+    text-transform: uppercase !important;
+    padding: 0.75em 2em !important;
+    font-weight: 600 !important;
+    font-size: $body-small !important;
+    color: $color-white !important;
+    border-color: $color-white !important;
+    background-color: $color-secondary !important;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      color: $color-primary !important;
+      border: 1px solid $color-primary !important;
+      background-color: $color-white !important;
+    }
+  }
+
+  .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      background-color: $color-gray-4;
+      width: 13px;
+      height: 13px;
+
+      &.swiper-pagination-bullet-active {
+        background-color: rgba($color-tertiary, 20%);
+      }
+    }
+  }
+
+  .et_pb_row {
+    display: flex;
+    align-items: center;
+
+    .hubspot-video {
+      background-image: url('../assets/img/background-01.png');
+      background-size: 110%;
+      padding: 3em;
+    }
+
+    @media (max-width: $tablet-large) {
+      h1 {
+        font-size: 1.75em;
+      }
+
+      p {
+        font-size: $body-small;
+      }
+
+      &.text-image {
+        flex-direction: column;
+      }
+
+      &.image-text {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+  }
+
+  p,
+  .et_pb_text_inner {
+    font-weight: 400;
+  }
+}
+
+.faq {
+  .et_pb_toggle.et_pb_toggle_close,
+  .et_pb_toggle.et_pb_toggle_open {
+    .et_pb_toggle_title {
+      &::before {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .et_pb_toggle_item {
+    padding: 1.7em 0;
+  }
+
+  h5.et_pb_toggle_title {
+    font-weight: 500;
+  }
+}
+
+.faq-cta {
+  background-color: rgba(40 44 43 / 70%);
+
+  .et_pb_row {
+    bottom: 2.3vw;
+  }
+
+  .et_pb_text_inner,
+  p {
+    font-weight: 600;
+  }
+}
+
+.feature-links {
+  box-shadow: 0 4px 13px rgb(0 0 0 / 10%);
+  z-index: 1;
+
+  a {
+    color: $color-gray-1;
+  }
+
+  .page {
+    .active-page {
+      a {
+        font-size: 1.1em;
+        color: $color-secondary;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .page-content {
+    .content-title {
+      a {
+        border-top: 6px solid $color-secondary;
+        padding-top: 1.03em;
+        color: $color-secondary;
+      }
+    }
+  }
+}

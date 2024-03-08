@@ -1,0 +1,122 @@
+body {
+  #main-content {
+    .et_pb_section {
+      &.cta-guide {
+        display: flex;
+        align-items: center;
+
+        .et_pb_row {
+          display: flex;
+          align-items: center;
+
+          .et_pb_text_inner {
+            font-weight: 600;
+          }
+
+          .et_pb_image {
+            width: 110%;
+          }
+        }
+
+        .et_pb_button {
+          &.et_pb_button_1 {
+            padding: 0.3em 2em !important;
+          }
+        }
+      }
+
+      .yellow {
+        background: $color-yellow !important;
+        color: $color-white !important;
+        border: 2px solid $color-yellow !important;
+
+        &:hover {
+          background: none !important;
+          border: 2px solid $color-yellow !important;
+          color: $color-yellow !important;
+        }
+      }
+
+      .orange {
+        background: $color-orange !important;
+        color: $color-white !important;
+        border: 2px solid $color-orange !important;
+
+        &:hover {
+          background: none !important;
+          border: 2px solid $color-orange !important;
+          color: $color-orange !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-large) {
+  body {
+    #main-content {
+      .et_pb_section {
+        &.cta-guide {
+          height: 33vh;
+          padding-top: 0;
+
+          .et_pb_row {
+            height: 100%;
+
+            .et_pb_column {
+              margin-bottom: 1em;
+            }
+
+            .et_pb_image {
+              width: 160%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $mobile-medium) {
+    body {
+      #main-content {
+        .et_pb_section {
+          &.cta-guide {
+            .et_pb_row {
+              .et_pb_text_inner {
+                font-size: 0.6em;
+                line-height: 1.2;
+                top: 0.8em;
+              }
+
+              .et_pb_image {
+                width: 160%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-small) {
+  body {
+    #main-content {
+      .et_pb_section {
+        &.cta-guide {
+          .et_pb_row {
+            .et_pb_text_inner {
+              font-size: 0.5em;
+            }
+
+            .et_pb_column {
+              .et_pb_image {
+                width: 160%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

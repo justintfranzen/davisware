@@ -1,0 +1,36 @@
+.match-header-container {
+  max-width: $container-large-width;
+  width: calc(85% - 4em);
+}
+
+.logo-slider {
+  .dsm_image_carousel {
+    .swiper-slide img {
+      height: 7vh;
+    }
+  }
+}
+
+@media (max-width: $screen-medium) {
+  .logo-slider {
+    .swiper-container {
+      height: auto;
+    }
+
+    .dsm_image_carousel {
+      .swiper-slide img {
+        height: 4vh;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-medium) {
+  .logo-slider {
+    .dsm_image_carousel {
+      .swiper-slide img {
+        height: auto;
+      }
+    }
+  }
+}

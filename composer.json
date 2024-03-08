@@ -1,0 +1,15 @@
+{
+  "authors": [
+    {
+      "name": "Luke Summers",
+      "email": "lsummers@thiel.com"
+    }
+  ],
+  "config": {
+    "platform-check": false
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^7.0",
+    "ext-json": "*"
+  }
+}

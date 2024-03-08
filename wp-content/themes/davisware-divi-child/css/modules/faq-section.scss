@@ -1,0 +1,161 @@
+.faq {
+  display: none;
+
+  .et_pb_toggle.et_pb_toggle_close,
+  .et_pb_toggle.et_pb_toggle_open {
+    .et_pb_toggle_title {
+      font-weight: 500;
+
+      @media (max-width: $tablet-large) {
+        font-size: 1rem !important;
+      }
+
+      &::before {
+        font-size: $h5;
+
+        @media (max-width: $tablet-large) {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+
+  .et_pb_toggle_item {
+    padding: 1.7em 0;
+  }
+
+  @media (max-width: $tablet-large) {
+    h1,
+    h2 {
+      font-size: 1.625em !important;
+    }
+
+    .et_pb_toggle_content {
+      font-size: $body-small;
+    }
+  }
+}
+
+.faqs-hero {
+  &.main-header-section {
+    .sub-header {
+      margin-bottom: 1em !important;
+      font-size: $h6;
+      color: $color-tertiary;
+
+      @media (max-width: $tablet-large) {
+        font-size: 18px;
+      }
+    }
+
+    .main-header {
+      margin-bottom: 0 !important;
+
+      h1 {
+        line-height: 1;
+        font-size: $h1;
+        color: $color-white;
+
+        @media (max-width: $tablet-large) {
+          font-size: $h2;
+        }
+      }
+    }
+
+    .hero-content {
+      color: $color-white;
+      margin-top: 1em !important;
+      font-size: $body-standard;
+
+      @media (max-width: $tablet-large) {
+        font-size: $body-small;
+      }
+    }
+  }
+}
+
+.faq-cta {
+  background-color: rgba(40 44 43 / 70%);
+  padding: 2.5em 0;
+  height: 100% !important;
+  min-height: 20em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $tablet-large) {
+    min-height: 17em;
+
+    .et_pb_text_inner {
+      font-size: 1rem;
+      line-height: $h5;
+    }
+  }
+
+  .et_pb_row {
+    bottom: 0 !important;
+
+    .et_pb_column {
+      margin-bottom: 0;
+
+      .et_pb_image {
+        margin: -6em 1em 0 -6em;
+        bottom: -3em;
+      }
+    }
+  }
+
+  .et_pb_text_inner,
+  p {
+    font-weight: 600;
+  }
+}
+
+.dvswr-faqs-section {
+  background-color: #eff9fd;
+
+  .dvsw-accordion {
+    border: $color-tertiary solid;
+    border-width: 0 0 2px;
+    background-color: #eff9fd;
+    color: $color-black;
+    margin-bottom: 0;
+    padding: 2em 0;
+
+    @media (max-width: $tablet-large) {
+      padding: 1.5em 0;
+
+      .et_pb_toggle_content {
+        font-size: $body-small;
+      }
+    }
+
+    h5 {
+      font-size: $h6;
+      letter-spacing: 0;
+      font-weight: 500;
+      color: $color-black;
+
+      @media (max-width: $tablet-large) {
+        font-size: $body-standard;
+      }
+
+      &::before {
+        font-size: 26px;
+        color: $color-tertiary;
+
+        @media (max-width: $tablet-large) {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+
+.comparison-points {
+  .dsm_icon_list {
+    .dsm_icon_list_child {
+      align-items: baseline;
+    }
+  }
+}

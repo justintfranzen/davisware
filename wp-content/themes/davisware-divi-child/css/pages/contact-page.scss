@@ -1,0 +1,32 @@
+#hsForm_8acaf59f-ea75-4837-bcdc-839770faefbd {
+  .hs_company {
+    width: 100%;
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .dsm_advanced_tabs .dsm-tab.dsm-active::before {
+    display: none;
+  }
+
+  html .dsm-advanced-tabs-container .dsm-advanced-tabs-wrapper {
+    gap: 0.25em;
+  }
+
+  .dsm_advanced_tabs .dsm-tab {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-medium) and (max-width: $tablet-large) {
+  .dsm_advanced_tabs_0 {
+    .dsm-advanced-tabs-wrapper {
+      display: flex !important;
+      justify-content: center !important;
+
+      .dsm-tab {
+        width: calc(29% - 2.5em);
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+.dvswr-testimonial-card {
+  background-color: $color-white;
+  padding: 2em 1.5em;
+  border-radius: 15px;
+  background-image: url('../assets/img/testimonial-bg.jpg');
+  background-size: contain;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+
+  &_title {
+    color: $color-gray-1;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+  }
+
+  &_rating {
+    font-size: 0.75em;
+    padding-bottom: 1em;
+    display: none;
+  }
+
+  &_rating-text {
+    font-weight: 300;
+  }
+
+  &_rating-star {
+    font-family: $et-modules;
+    font-weight: 400;
+    color: $color-gray-4;
+
+    &.filled {
+      color: $color-senary;
+    }
+  }
+
+  &_text {
+    font-weight: 300;
+    font-size: 0.9375em;
+    padding-bottom: 1.5em !important;
+    line-height: 1.5;
+  }
+
+  &_person {
+    font-weight: 500;
+    line-height: 1.25;
+  }
+
+  &_person-name {
+    display: block;
+    font-size: $body-small;
+  }
+
+  &_person-company {
+    display: block;
+    font-size: 0.75em;
+  }
+}
+
+.features-testimonials {
+  display: none;
+}
+
+.et_pb_section.testimonial-slider {
+  padding: 4em 0 1em;
+
+  .dsm_card_carousel {
+    .swiper-button-prev {
+      &::before {
+        font-size: 5em;
+      }
+    }
+
+    .swiper-button-next {
+      &::before {
+        font-size: 5em;
+      }
+    }
+  }
+}
+
+// stylelint-disable no-descending-specificity
+.dsm_card_carousel.dvswr-testimonial-carousel {
+  padding: 0 3em;
+
+  @media (max-width: $tablet-large) {
+    padding: 0;
+  }
+
+  .dsm_card_carousel_child,
+  .dsm_card_carousel_child_description,
+  .et_pb_module_inner,
+  .dvswr-testimonial-card,
+  .dsm_card_wrapper {
+    height: auto;
+  }
+}
+// stylelint-enable no-descending-specificity
+
+.reviews-testimonials {
+  .et_pb_row {
+    .review-testimonial-box {
+      background-image: url('../assets/img/testimonial-bg.jpg');
+      background-position: bottom left;
+
+      .et_pb_module {
+        padding: 30px;
+      }
+    }
+
+    .et_pb_module:nth-child(1) {
+      background-image: url('../assets/img/left-quote.png');
+      background-size: auto;
+      background-position: initial;
+    }
+  }
+}
+
+@media (min-width: $screen-large) {
+  .testimonial-slider {
+    .et_pb_module_inner {
+      .dsm_card_wrapper {
+        .dsm_card_carousel_child_description {
+          .dvswr-testimonial-card {
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    .swiper-container {
+      &.dsm_card_carousel_wrapper {
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .testimonial-slider .match-header-container {
+    width: calc(100% - 4em);
+
+    .dsm_card_carousel {
+      &.dvswr-testimonial-carousel {
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-medium) {
+  .testimonial-slider {
+    .dsm_card_carousel {
+      .swiper-button-prev {
+        &::before {
+          display: none;
+        }
+      }
+
+      .swiper-button-next {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet-large) {
+  .dsm_card_carousel_arrow {
+    &.swiper-button-prev {
+      left: -1.5em !important;
+    }
+
+    &.swiper-button-next {
+      right: -1.5em !important;
+    }
+  }
+}

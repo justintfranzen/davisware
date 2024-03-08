@@ -1,0 +1,65 @@
+.video-cta-section {
+  .et_pb_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    h1,
+    h2,
+    h3 {
+      font-size: 32px !important;
+    }
+    @media (max-width: $tablet-large) {
+      flex-direction: column-reverse;
+
+      h1,
+      h2,
+      h3 {
+        font-size: 26px !important;
+      }
+
+      .video-cta-section_image {
+        text-align: center;
+      }
+    }
+
+    & > :first-child {
+      flex-grow: 1;
+      margin-right: 0;
+    }
+  }
+
+  &_header {
+    margin-bottom: 0.5em !important;
+  }
+
+  &_button,
+  .et_pb_module &_button {
+    color: $color-white;
+    background: none;
+    padding: 0;
+    text-transform: capitalize;
+    display: inline-flex;
+    align-items: center;
+    font-size: $body-small;
+
+    &::after {
+      content: ''; // Play button
+      font-family: $font-awesome;
+      font-weight: 400;
+      display: block;
+      opacity: 1;
+      position: relative;
+      margin-left: 0.5em;
+      font-size: 1.25em;
+    }
+
+    &:hover {
+      padding: 0;
+
+      &::after {
+        color: $color-senary;
+      }
+    }
+  }
+}

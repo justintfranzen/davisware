@@ -1,0 +1,191 @@
+.et_pb_row.industry-icon-section-row {
+  padding-bottom: 4em;
+
+  .industry-icon-card {
+    .et_pb_module {
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        margin-top: -1em;
+        cursor: pointer;
+
+        .dsm_card_title,
+        .et_pb_button {
+          color: $color-primary;
+        }
+      }
+
+      .et_pb_button {
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $tablet-large) {
+    padding-bottom: 1em;
+  }
+
+  & + .industry-icon-section-row {
+    padding-top: 0;
+  }
+
+  .et_pb_column {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (min-width: 1350px) {
+    padding-bottom: 4em;
+
+    & + .industry-icon-section-row {
+      padding-top: 0;
+    }
+  }
+}
+
+// Need to be a few class layers deep to override the dsm stuff
+.dsm_card.industry-icon-card {
+  // padding-bottom: 6em;
+  max-width: 27em;
+
+  @media (max-width: $tablet-large) {
+    max-width: 100%;
+
+    &.industry-icon-card--more-industries {
+      width: 55%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2em;
+
+      .dsm_card_wrapper {
+        .dsm_card_title {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .et_pb_button {
+      display: inline-flex !important;
+    }
+  }
+
+  .et_pb_module_inner {
+    display: flex;
+    align-items: flex-start;
+
+    .dsm_card_image_wrapper {
+      flex: 1 0 5.5em;
+    }
+
+    .dsm_card_wrapper {
+      flex: 0 1 100%;
+      padding-top: 0;
+      padding-left: 2em;
+    }
+
+    .dsm_card_title {
+      font-size: 1em;
+      color: $color-gray-1;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    .dsm_card_description {
+      font-size: $body-standard;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $color-primary;
+      transition: 0.3s all;
+
+      &:hover {
+        margin-left: 1em;
+      }
+
+      &::after {
+        font-family: $font-awesome;
+        content: ''; // This is an arrow. Don't ask me why.
+        opacity: 1;
+        margin-left: 1em;
+        font-weight: 900;
+        font-size: $body-small;
+        position: relative;
+        color: $color-primary;
+      }
+    }
+
+    .et_pb_button {
+      color: $color-black;
+      border: none;
+      text-transform: uppercase;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      font-size: 1em;
+      font-weight: 600;
+
+      &::after {
+        font-family: $font-awesome;
+        content: ''; // This is an arrow. Don't ask me why.
+        opacity: 1;
+        margin-left: 1em;
+        font-weight: 900;
+        font-size: $body-small;
+        display: block;
+        position: relative;
+      }
+    }
+  }
+
+  &--more-industries {
+    .et_pb_module_inner {
+      align-items: center;
+
+      .dsm_card_image_wrapper {
+        @media (max-width: $tablet-large) {
+          flex: 1 0 3.5em;
+        }
+      }
+
+      .dsm_card_wrapper {
+        padding-bottom: 0;
+      }
+
+      .dsm_card_title {
+        display: flex;
+
+        @media (max-width: $tablet-large) {
+          flex: 1 0 4.5em;
+        }
+
+        &::after {
+          font-family: $font-awesome;
+          content: ''; // This is an arrow. Don't ask me why.
+          opacity: 0;
+          margin-left: 0;
+          font-weight: 900;
+          font-size: $body-small;
+          display: block;
+          position: relative;
+        }
+      }
+    }
+
+    &:hover {
+      .et_pb_module_inner {
+        .dsm_card_title {
+          color: $color-secondary;
+
+          &::after {
+            opacity: 1;
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+  }
+}

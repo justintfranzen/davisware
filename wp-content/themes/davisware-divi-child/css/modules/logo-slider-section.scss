@@ -1,0 +1,29 @@
+.et_pb_section {
+  &.logo-slider {
+    padding: 5em 0 !important;
+
+    .et_pb_row {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: $mobile-medium) {
+  .et_pb_section {
+    &.logo-slider {
+      .dica_divi_carousel {
+        .dica-container {
+          height: 13em;
+          display: flex;
+          align-items: center;
+
+          .swiper-container {
+            .swiper-wrapper {
+              padding: 5em !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

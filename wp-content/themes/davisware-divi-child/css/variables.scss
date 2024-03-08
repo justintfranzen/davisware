@@ -1,0 +1,65 @@
+// Brand Colors
+$color-primary: #2f68b2;
+$color-secondary: #057dc1;
+$color-tertiary: #21a7e0;
+$color-quaternary: #f47c38;
+$color-senary: #febc34;
+$color-septenary: #b7d556;
+$color-black: #000;
+$color-white: #fff;
+$color-gray-1: #282c2b;
+$color-gray-2: #949695;
+$color-gray-3: #c9c9c9;
+$color-gray-4: #f0f0f0;
+$color-orange: #f47637;
+$color-yellow: #fdbc34;
+$color-light-blue: #22a7e0;
+
+// Fonts
+$font-primary: 'Poppins', helvetica, arial, lucida, sans-serif;
+$font-awesome: 'FontAwesome' !important;
+$et-modules: 'ETmodules' !important;
+
+// Font Sizes
+$h1: 4.8125em; // 77px
+$h2: 2.625em; // 42px
+$h3: 2em; // 32px
+$h4: 1.5em; // 24px
+$h5: 1.5em; // 24px
+$h6: 1.25em; // 20px
+$body-large: 1.75em; // 18px
+$body-standard: 1em;
+$body-large: 1.625em;
+$body-small: 0.875em;
+
+// TODO: Figure out Divi Breakpoints
+$container-large-width: 1478px;
+$container-fluid-width: 1320px;
+$container-fluid-break: 1400px;
+$container-small-width: 1080px;
+
+// Mobile First
+$screen-x-large: 1680px;
+$screen-large-top-menu: 1550px;
+$max-row-width: 1478px;
+$screen-large: 1440px;
+$screen-medium-large: 1300px;
+$screen-medium: 1200px;
+$screen-small: 1024px;
+$tablet-large: 980px;
+$tablet-medium: 768px;
+$mobile-large: 667px;
+$mobile-medium: 576px;
+$mobile-small: 375px;
+$mobile-x-small: 320px;
+
+// Desktop First
+$screen-x-xlarge: 1679.98px;
+$screen-x-large: 1439.98px;
+$screen-x-medium: 1199.98px;
+$screen-x-small: 1023.98px;
+$tablet-x-large: 979.98px;
+$tablet-x-medium: 767.98px;
+$mobile-x-large: 666.98px;
+$mobile-x-medium: 575.98px;
+$mobile-x-small: 374.98px;

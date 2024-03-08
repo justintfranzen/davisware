@@ -1,0 +1,109 @@
+/* ===================================================================
+*
+* Release/patch notes
+*
+* ================================================================ */
+
+.version-select-wrapper {
+  padding: 12px 20px;
+  background-color: #eee;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+
+#version-form label,
+#version-select {
+  display: inline-block;
+  margin: 6px 0;
+}
+
+#version-form label {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+#version-select,
+#release-select {
+  font-size: 1em;
+  padding: 8px;
+  min-width: 220px;
+}
+
+#release-select {
+  margin-bottom: 30px;
+}
+
+.ver-select-message {
+  padding: 40px 20px;
+  font-weight: 600;
+}
+
+.release-notes {
+  font-size: 0.9em;
+  font-variant-numeric: lining-nums !important;
+}
+
+.basic-table.release-notes {
+  width: 100%;
+}
+
+.release-notes tr th,
+.release-notes tr td {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.release-notes tr th {
+  background-color: #2f68b2;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.release-notes .release-row td {
+  background: #eee;
+  font-weight: 600;
+  padding: 22px 15px;
+  font-size: 1.05rem;
+}
+
+.release-notes tr td:first-child {
+  width: 20% !important;
+}
+
+.release-notes td.patch-jira-id {
+  white-space: nowrap;
+}
+
+.tablesaw-advance {
+  float: none;
+  text-align: right;
+}
+
+.tablesaw-bar.tablesaw-mode-swipe {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .release-notes {
+    font-size: 0.8em;
+  }
+
+  .release-notes tr th {
+    font-size: 1em;
+  }
+
+  #release-select {
+    margin-bottom: 10px;
+  }
+
+  .tablesaw-bar.tablesaw-mode-swipe {
+    display: block;
+  }
+}
+
+.loader {
+  display: none;
+  text-align: center;
+  padding: 80px 0;
+}

@@ -1,0 +1,123 @@
+.main-header-section {
+  color: $color-white;
+  background-color: $color-gray-1;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../assets/img/default-bg.jpeg');
+
+  @media only screen and (min-width: 1350px) {
+    &.et_pb_section {
+      padding-top: 8em;
+      padding-bottom: 8em;
+    }
+  }
+
+  &_sub-header {
+    color: $color-tertiary;
+    margin-bottom: 0 !important;
+    font-size: 1.25em;
+    line-height: 1.75;
+
+    @media (max-width: $tablet-large) {
+      font-size: $body-small;
+    }
+  }
+
+  &_header {
+    margin-bottom: 0.5em !important;
+
+    h1 {
+      color: $color-white;
+      font-size: $h1;
+      font-weight: 600;
+      padding: 0;
+
+      @media (max-width: $tablet-large) {
+        font-size: $h2;
+      }
+    }
+  }
+
+  &_header-text {
+    color: $color-white;
+    max-width: 50%;
+
+    @media (max-width: $tablet-large) {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  &--scroll-up-header {
+    padding-bottom: 2em;
+
+    @media only screen and (min-width: 1350px) {
+      &.et_pb_section {
+        padding-bottom: 2em;
+      }
+    }
+  }
+}
+
+.header-scroll-up-items {
+  margin-top: 3em;
+
+  @media (max-width: $tablet-large) {
+    > div {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.header-scroll-up-item {
+  color: $color-white;
+
+  @media (max-width: $tablet-large) {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .percent {
+    color: $color-white;
+
+    @media (max-width: $tablet-large) {
+      margin-right: 1em;
+      margin-bottom: 0;
+
+      p {
+        font-size: 3.625em;
+      }
+    }
+
+    &-value {
+      color: $color-white;
+      font-weight: 600;
+
+      &::before {
+        content: '+';
+        display: inline-block;
+        font-weight: 400;
+      }
+    }
+
+    &-sign {
+      color: $color-white;
+      font-weight: 600;
+    }
+  }
+
+  .title {
+    color: $color-septenary;
+    font-weight: 500;
+    font-size: 1em;
+
+    @media (max-width: $tablet-large) {
+      font-size: $body-small;
+      margin-bottom: 2em;
+    }
+  }
+}
